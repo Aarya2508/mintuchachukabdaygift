@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('Blow strength:', strength); // Debugging: Log detected strength
 
       // If blow strength exceeds the threshold
-      if (strength > 0.4) {
+      if (strength > 0.3) {
           candles.forEach(candle => {
               if (!candle.classList.contains('blown-out')) {
                   blowOutCandle(candle); // Blow out the candle
